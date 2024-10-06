@@ -28,3 +28,15 @@
     grid-template-columns: 100px 200px;
     grid-auto-flow: column;
 }
+
+/** Fourth block */
+.container-four {
+    display: grid;
+    border: 10px solid black;
+    /* grid-template-columns: 100px 100px 200px 150px; */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 100px 1fr 2fr 1fr;
+    gap: 25px;
+}
