@@ -1,0 +1,30 @@
+@import url(./basic-styles.css);
+
+/** First block */
+.container-one {
+    display: grid;
+    grid-template-columns: 100px 200px 400px;
+    grid-template-rows: 200px 100px 50px;
+    /* column-gap: 10px; */
+    /* row-gap: 20px; */
+    gap: 10px 30px;
+    margin-bottom: 50px;
+}
+
+/** Second block */
+.container-two {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 100px 150px;
+    /* grid-auto-rows: 80px; */
+    grid-auto-rows: 80px 160px;
+}
+
+/** Third block */
+.container-three {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 200px;
+    grid-auto-flow: column;
+}
