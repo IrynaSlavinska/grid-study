@@ -117,3 +117,6 @@ align-content впливає на розміщення колонок всере
 Властивості justify-self і align-self застосовуються на самому елементі всередині клітинки сітки (на відміну від попередніх)
 start | end | center | stretch (за замовчуванням)
 Аналогічно до результату justify-items і align-items
+
+\*\*Eleven block
+Nested Grids

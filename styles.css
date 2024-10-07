@@ -157,3 +157,20 @@
     justify-self: center;
     align-self: center;
 }
+
+/** Eleven block */
+.container-11 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.container-11 .grid-item {
+    border: 2px solid #000000;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
