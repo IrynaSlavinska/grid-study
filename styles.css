@@ -105,14 +105,36 @@
 /** Nine block */
 .container-nine {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    gap: 20px;
+    grid-template-areas: "H H H H"
+        "M M . S"
+        "F F F F";
 }
 
-.container-nine .header {}
+.container-nine .header {
+    grid-area: H;
+}
 
-.container-nine .main {}
+.container-nine .main {
+    grid-area: M;
+}
 
-.container-nine .sidebar {}
+.container-nine .sidebar {
+    grid-area: S;
+}
 
-.container-nine .footer {}
+.container-nine .footer {
+    grid-area: F;
+}
 
-@media(max-width: 700px) {}
+@media(max-width: 700px) {
+    .container-nine {
+        grid-template-areas:
+            "S H H H"
+            "S M M M"
+            "S F F F"
+        ;
+    }
+}
