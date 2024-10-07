@@ -138,3 +138,22 @@
         ;
     }
 }
+
+/** Ten block */
+.container-ten {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    border: 10px solid #000000;
+
+    /* justify-items: stretch; */
+    /* align-items: stretch; */
+    /* justify-content: space-evenly; */
+    /* height: 800px; */
+    /* align-content: space-between; */
+}
+
+.item-4 {
+    justify-self: center;
+    align-self: center;
+}
